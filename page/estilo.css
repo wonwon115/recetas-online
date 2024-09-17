@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el tamaño del elemento */
+  }
+body{
+    font-family: sans-serif;
+    background-image: url(../img/fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0; /* Elimina los márgenes predeterminados del body */
+}
+a{
+    text-decoration: none;
+    color: #faf3e1;
+}
+header{
+    display: flex;
+    width: 100%;
+    min-height: 70px;
+    justify-content: space-around;
+    background-color: #222222;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 60px;
+    margin-right: 10px;
+}
+.logo-nombre{
+    color: #faf3e1;
+}
+.logo-nombre:hover{
+    color: #f74a1f;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "filtro item item item item"
+    "filtro item item item item"
+    "filtro item item item item"
+    "filtro item item item item"
+    "filtro item item item item";
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, auto);
+}
+.encabezado{
+    width: 100%;
+    height: 700px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #faf3e1;
+}
+.pregunta{
+    line-height:40px;
+    padding: 30px;
+    background-image: none;
+    background-color: #222222;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+}
+input{
+    padding: 10px;
+    padding-right: 35px;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+}
+.titulo {
+    margin: 0 20px; /* Elimina márgenes adicionales */
+    padding: 20px 0; /* Ajusta el relleno según sea necesario */
+    text-align: left;
+    width: calc(100% - 40px); /* Ajusta el ancho para considerar el margen */
+    color: #f74a1f;
+}
+.grid-global1, .grid-global2 {
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 20px; /* Ajusta el relleno según sea necesario */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total del elemento */
+  }
+.wrapper {
+    display: flex; /* Organiza los grids horizontalmente */
+    flex-direction: column; /* Los grids estarán en columnas */
+    align-items: center; /* Centra los grids horizontalmente */
+    gap: 20px; /* Espacio entre las filas de grids */
+    padding: 20px;
+    height: auto;
+}
+.grid-container1, .grid-containers2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Tres columnas para ambos grids */
+    gap: 10px; /* Espacio entre los elementos del grid */
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    max-width: 1200px; /* Ajusta el máximo ancho según sea necesario */
+}
+.img1{
+    width: 300px;
+    height: 200px;
+}
+.img2{
+    width: 300px;
+    height: 300px;
+}
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222222;
+    border: 1px solid #faf3e1;
+    font-size: 25px;
+    margin: 0;
+  }
+.grid-item:hover{
+    background-color: #f74a1f;
+    color: #222222;
+    border: 1px solid #faf3e1;
+  }
+  nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    font-size: 20px;
+    margin: 20px;
+  }
+a:hover{
+    color: #f74a1f;
+    transition: 0.3s;
+  }
+  .chef{
+    display: flex; /* Utilizamos Flexbox para centrar */
+    flex-direction: column; /* Dispone los grids en una columna */
+    align-items: center; /* Centrar verticalmente */
+    height: auto; /* Altura completa de la ventana */
+}
+.fondo{
+    background-image: url(../img/fresa.jpg);
+    background-size: 100%;
+    background-position:center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px;
+}
+.fondo :hover{
+    background-image: none;
+    background-color: #222222;
+    text-align: center;
+    color: #faf3e1;
+    transition: 0.4s;
+}
+.rosa{
+    background-image: none;
+    background-color: rgb(238, 133, 151);
+    text-align: center;
+    padding: 60px;
+    color: #faf3e1;
+}
+  footer{
+    margin-top: 60px;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #cdcdd0;
+  }
+h1 {
+    color: #2c3e50;
+}
+h2 {
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina relleno predeterminado */
+}
+ul {
+    list-style-type: square;
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    margin: 10px 0;
+}
+.texto {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-image: none;
+    background-color: #222222;
+    padding: 20px;
+}
+.container-item{
+    grid-area: item;
+    gap: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+.item{
+    border-radius: 10px;
+    background-image: none;
+    background-color: #222222;
+    color: #cdcdd0;
+    width: 300px;
+    height: auto;
+}
+.item img{
+    width: 400px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.item figure{
+    overflow: hidden;
+}
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    align-items:center ;
+    flex-direction: column;
+    gap: 10px;
+}
+.filter-section {
+    grid-area: filtro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: none;
+    background-color: #222222;
+    color: #cdcdd0;
+  }
+.recipes {
+    gap: 20px;
+  }
+.recipe {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+.recipe h3 {
+    margin: 0 0 10px;
+  }
+@media screen and (max-width: 480px){
+    header{
+        flex-direction: column;
+        height: auto;
+    }
+    .logo{
+        font-size: 15px;
+    }
+    nav a{
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+      }
+      .pregunta{
+        width: auto;
+        line-height: 25px;
+
+      }
+    .grid-container1, .grid-containers2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
+    .grid-item{
+        text-align: center;
+    }
+    .img1{
+        width: 150px;
+        height: 100px;
+    }
+    .img2{
+        width: 150px;
+        height: 150px;
+    }
+    .fondo{
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        
+    }
+    .nav_footer{
+        display: flex;
+        text-align: center;
+    }
+}
+@media screen and (min-width:481px) and (max-width: 768px){
+    header{
+        width: 100%;
+    }
+    .logo{
+        font-size: 15px;
+    }
+    nav a{
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+      }
+    .grid-container1, .grid-containers2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: auto;
+    }
+    .img1{
+        width: 150px;
+        height: 100px;
+    }
+    .img2{
+        width: 150px;
+        height: 150px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        
+    }
+    .nav_footer{
+        display: flex;
+        text-align: center;
+    }
+}@media screen and (min-width:769px) and (max-width: 1024px){
+    nav a{
+        font-weight: 600;
+        font-size: 15px;
+      }
+    .grid-container1, .grid-containers2{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        height: auto;
+    }
+    .img1{
+        width: 150px;
+        height: 100px;
+    }
+    .img2{
+        width: 150px;
+        height: 150px;
+    }
+
+}
