@@ -64,6 +64,18 @@ header{
     text-align: center;
     border-radius: 10px 10px 10px 10px;
 }
+.presentacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin: 50px;
+    background-color: #cdcdd0;
+    background-image: none;
+    height: 400px;
+}
+.portada{
+    background-image: url(../img/ñoquis.jpg);
+    
+}
 input{
     padding: 10px;
     padding-right: 35px;
