@@ -281,6 +281,20 @@ ul li {
         line-height: 25px;
 
       }
+      .grid-container{
+        display: grid;
+        grid-template-areas: 
+        "item item item"
+        "item item item"
+        "item item item"
+        "item item item"
+        "item item item";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+      }
+      .filter-section{
+        display: none;
+      }
     .grid-container1, .grid-containers2{
         display: grid;
         grid-template-columns: 1fr 1fr;
